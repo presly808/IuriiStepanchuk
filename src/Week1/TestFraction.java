@@ -3,6 +3,8 @@ package Week1;
 /**
  * Created by Iurii on 20.01.2016.
  */
+ 
+ // WHERE TESTS, COMPARE EXPECTED DATA WITH PRACTICAL DATA, SEE CLASSWORK
 public class TestFraction {
 
     public static void main(String[] args) {
