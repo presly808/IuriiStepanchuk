@@ -5,6 +5,7 @@ package Week1;
  */
 public class Fraction {
 
+    // USE ENGLISH WORDS
     private int chysel;
     private int znam;
 
@@ -33,17 +34,20 @@ public class Fraction {
     }
 
     public Fraction div (Fraction other) {
-        Fraction fr = new Fraction ( this.chysel * other.znam, this.znam * other.chysel );
-        fr.optimizer();
-        return  fr;
+        // CAN SIMPLIFY TO ONE CODE LINE
+        return  new Fraction ( this.chysel * other.znam, this.znam * other.chysel ).optimazer();
     }
 
+    // name must be noun
     public Fraction optimizer () {
+        // TODO use ternary operator
         int bigger;
         if (this.chysel > this.znam) {
              bigger = this.chysel;
+        } else { 
+            bigger = this.znam;
         }
-        else bigger = this.znam;
+        
         for (int i = bigger/2; i > 0 ; i--) {
             if ((this.chysel % i == 0) && (this.znam % i == 0)) {
                 this.chysel = this.chysel/i;
