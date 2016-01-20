@@ -11,6 +11,7 @@ public class TestMyNumber {
 
         //Sum
         MyNumber num3 = num1.add(num2);
+        System.out.println(num3.getValue == 24); // always ckech eexpected value(24) with practical value num.getValue()
         System.out.println(num1.getValue()  + " + " + num2.getValue() + " = " + num3.getValue());
 
         //Minus
