@@ -23,6 +23,7 @@ public class MyNumber {
         return new MyNumber(this.value * other.value);
     }
 
+    // REPLACE BY ONE CODE LINE
     public double devide(MyNumber other){
         double first = this.value;
         double second =  other.value;
@@ -50,18 +51,15 @@ public class MyNumber {
         return new MyNumber(this.value % other.value);
     }
 
+    // METHOD MUST RETURN RESULT, IT HELPS WHILE TESTING
     public void compare (MyNumber other){
 
         if (this.value > other.value) {
             System.out.println(this.value + " - найбільше число");
-        }
-        else {
-            if (this.value < other.value){
-                System.out.println(other.value + " - найбільше число");
-            }
-            else  {
-                System.out.println("Обидва чистла мають однакові значення!");
-            }
+        } else if (this.value < other.value){
+            System.out.println(other.value + " - найбільше число");
+        } else  {
+            System.out.println("Обидва чистла мають однакові значення!");
         }
     }
 
